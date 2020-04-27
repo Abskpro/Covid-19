@@ -1,0 +1,27 @@
+.table {
+  align: center;
+}
+
+.caption {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.b-head {
+  font-size: 25px;
+  background-color: #9ebae8;
+}
+
+#t-data {
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td,
+th {
+  width: 20px;
+  padding: 5px 2px 5px 2px;
+  border: 1px solid black;
+}

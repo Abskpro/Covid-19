@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/world.css" />
+  <script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+          integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+        $("#header").load("./navbar.html");
+      })
+    </script>
+</head>
+<body>
+  <header id="header"></header>
+  <div class="table" style="overflow-y:auto;">
+    <table id="t-data">
+      <caption class="caption">World Data</caption>
+      <tr>
+        <th class="b-head">Country</th>
+        <th class="b-head">Cases</th>
+        <th class="b-head">Deaths</th>
+        <th class="b-head">Active</th>
+        <th class="b-head">Recovered</th>
+        <!-- <th class="b-head">Critical</th> -->
+      </tr>
+    </table>
+  </div>
+  <script src="../src/js/api.js"></script>
+</body>
+</html>
