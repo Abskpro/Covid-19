@@ -6,17 +6,18 @@ function News() {
       'http://newsapi.org/v2/top-headlines?' +
       'sources=bbc-news,cnn,null,cnbc&' +
       'q=corona+virus&' +
-      'from=2020-03-24&' +
+      'from=2020-06-1&' +
       'sortBy=popularity&' +
-      'apiKey=74baf455e2c2433e80e7653531718dcb';
+      'apiKey=a15ea6e43815434483b2a397d7016783';
     var req = new Request(url);
     const response = await fetch(req);
+    console.log(response);
     let data = await response.json();
     return data;
   }
 
   api().then(json => {
-    console.log(json.articles[0], typeof json.articles[0].source.name);
+    // console.log(json.articles[0], typeof json.articles[0].source.name);
     let data = json.articles;
     data.map((curr, index) => {
       console.log(curr.source.name);
